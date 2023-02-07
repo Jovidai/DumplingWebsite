@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   
+
+    
+
+    <title>Flickity-exempel</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta
+      name="description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    
+    
+
+    <!-- Import the webpage's javascript file -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    
+  </head>
+  
+  
+  
+  
+  <body>
+    
+    <h1>
+      Flickity-exempel
+    </h1>
+    
+    <h2>
+      Instruktioner
+    </h2>
+    
+    <ol>
+      <li>Gå till https://flickity.metafizzy.co/</li>
+      <li>Gå till rubriken Install... CDN. Kopiera de båda kodsnuttarna och klistra in i ditt HTML-dok</li>
+      <li>Vid "Getting started", kopiera div-koden, klistra in</li>
+      <li>Initialize with vanilla JavaScript</li>
+      <li>Next: Style</li>
+      <li>Tillbaka till Next. Options. autoplay</li>
+    </ol>
+    
+    
+    <div class="main-carousel" data-flickity='{ "adaptiveHeight": true,"cellAlign": "center", "contain": true, "autoPlay": true}'>
+      
+  <div class="carousel-cell">
+      <img class= "dumpling" src="https://cdn.glitch.global/b2e769b8-f199-4582-acff-b230a8ffc3c6/dumpling.webp?v=1675782471746">
+      </div>
+  <div class="carousel-cell">
+    <img  class= "dumpling" src="https://cdn.glitch.global/b2e769b8-f199-4582-acff-b230a8ffc3c6/gyoza.png?v=1675782474292">
+    </div>
+  <div class="carousel-cell">
+      <img class = "dumpling" src= "https://cdn.glitch.global/c805bab8-fe0e-4ebb-b15e-94e4dbfa5d3f/sichuan.jpeg?v=1675785328608">
+      
+      </div>
+
+</div>
+    
+    <!--
+    <script>
+      
+    var elem = document.querySelector('.main-carousel');
+      
+var flkty = new Flickity( elem, {
+  // options
+  cellAlign: 'left',
+  contain: true
+  
+});
+
+// element argument can be a selector string
+//   for an individual element
+var flkty = new Flickity( '.main-carousel', {
+  // options
+  
+});
+
+    </script>
+   -->
+  </body>
+</html>

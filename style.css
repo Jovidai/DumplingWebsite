@@ -1,0 +1,17 @@
+.carousel-cell {
+    width: 100%; /* full width */
+    margin-right: 10px;
+  }
+  
+  .main-carousel{
+  background-color: rgb(255,114,118);
+  }
+  
+  .dumpling{
+    display: block; margin-left: auto; margin-right: auto; width: 50vw;
+    
+  }
+  
+  .flickity-viewport {
+    transition: height 0.2s;
+  }
