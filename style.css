@@ -5,13 +5,19 @@
   
   .main-carousel{
   background-color: rgb(255,114,118);
+
   }
   
   .dumpling{
-    display: block; margin-left: auto; margin-right: auto; width: 50vw;
+    display: block; margin-left: auto; margin-right: auto; width: 25vw;
     
   }
   
   .flickity-viewport {
     transition: height 0.2s;
+  }
+
+  h1{
+    text-align: center;
+
   }
