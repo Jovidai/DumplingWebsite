@@ -1,6 +1,6 @@
-const dumplingType = ["DumplingType1", "DumplingType2", "DumplingType3"];
-const fillingText = ["FillingType1", "FillingType2", "FillingType3"];
-const sauceText = ["SauceType1", "SauceType2", "SauceType3"];
+const dumplingType = ["DumplingType0", "DumplingType1", "DumplingType2"];
+const fillingText = ["FillingType0", "Pork is from south China and is used during the new year.", "FillingType2"];
+const sauceText = ["SauceType0", "Lao gan ma is very popular in the south east", "SauceType2"];
 
 var dumplingIndex = 0;
 var fillingIndex = 0;
@@ -21,7 +21,7 @@ function init(){
   
   $('.main-carousel1').flickity({
     // options
-    cellAlign: 'left',
+    cellAlign: 'center',
     contain: false,
     adaptiveHeight: true
   });
@@ -42,21 +42,34 @@ function init(){
   $carousel.on( 'settle.flickity', function( event, index ) {
     console.log( 'First Flickity settled at ' + index );
     dumplingIndex = index;
-    const element = document.getElementById("end-text");
-    element.src = dumplingType[dumplingIndex] + fillingText[fillingIndex + sauceText[sauceIndex]];
+    updateEndText();
   });
+
   $carousel1.on( 'settle.flickity', function( event, index ) {
     console.log( 'Second Flickity settled at ' + index );
     fillingIndex = index;
+    updateEndText();
+
   });
   $carousel2.on( 'settle.flickity', function( event, index ) {
     console.log( 'Third Flickity settled at ' + index );
     sauceIndex = index;
+    updateEndText();
+
   });
+  updateEndText();
+
+
 }
 
+function finishedStuff(){
+  //show the ending
+  //show the text
+  //show the map
+  //yelp?
+}
 
-
-function updateEndText(p1, p2) {
-  
+function updateEndText() {
+  const element = document.getElementById("end-text");
+  element.innerHTML = dumplingType[dumplingIndex] + "\n" + fillingText[fillingIndex] + "\n" + sauceText[sauceIndex];
 }

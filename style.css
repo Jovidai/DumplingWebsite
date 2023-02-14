@@ -24,6 +24,13 @@
   .flickity-viewport {
     transition: height 0.2s;
   }
+  .end-text{
+    
+    text-align: center;
+    font-size: 50px;
+    vertical-align: sub;
+
+  }
 
   h1{
     text-align: center;
