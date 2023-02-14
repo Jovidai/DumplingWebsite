@@ -38,24 +38,15 @@
   <body>
     
     <h1>
-      Flickity-exempel
+      Dumpling Website
     </h1>
     
     <h2>
-      Instruktioner
+      Pick out your ideal dumpling!
     </h2>
     
-    <ol>
-      <li>Gå till https://flickity.metafizzy.co/</li>
-      <li>Gå till rubriken Install... CDN. Kopiera de båda kodsnuttarna och klistra in i ditt HTML-dok</li>
-      <li>Vid "Getting started", kopiera div-koden, klistra in</li>
-      <li>Initialize with vanilla JavaScript</li>
-      <li>Next: Style</li>
-      <li>Tillbaka till Next. Options. autoplay</li>
-    </ol>
     
-    
-    <div class="main-carousel" data-flickity='{ "adaptiveHeight": false,"cellAlign": "center", "contain": true, "autoPlay": true}'>
+    <div id= "first-carousel" class="main-carousel">
       
   <div class="carousel-cell">
       <img class= "dumpling" src="https://cdn.glitch.global/b2e769b8-f199-4582-acff-b230a8ffc3c6/dumpling.webp?v=1675782471746">
@@ -82,7 +73,7 @@
   </h1>
 
 
-<div class="main-carousel" data-flickity='{ "adaptiveHeight": false,"cellAlign": "center", "contain": true, "autoPlay": true}'>
+<div class="main-carousel1">
  <div class="carousel-cell">
       <img class= "dumpling" src="images/pork dumpling.webp">
      </div>
@@ -103,7 +94,7 @@
   </h1>
 
 
-<div class="main-carousel" data-flickity='{ "adaptiveHeight": false,"cellAlign": "center", "contain": true, "autoPlay": true}'>
+<div class="main-carousel2">
   <div class="carousel-cell">
     <img class= "dumpling" src="images/soy sauce.jpeg">
    </div>
@@ -137,5 +128,13 @@ var flkty = new Flickity( '.main-carousel', {
 
     </script>
    -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+   <script src="script.js">
+
+
+   </script>
+
   </body>
 </html>
