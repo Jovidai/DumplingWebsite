@@ -106,6 +106,12 @@
    </div>
 </div>
 
+<div class = "button" onclick="finish()" id = "submit-button">
+  <button>
+
+   Check out your ideal dumpling!
+  </button>
+</div>
 <div class = "end-text" id = "end-text">
   <span> 3</span>
 
@@ -144,10 +150,17 @@ var flkty = new Flickity( '.main-carousel', {
    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
  
   
-   <script src="script.js" />
+   <script src="script.js">
 
 
    </script>
+  <script>
+   function finish(){
+    console.log("Finish");
+    const element = document.getElementById("end-text");
+    element.style.opacity = 1;
+   }
+  </script>
  
 
   </body>
