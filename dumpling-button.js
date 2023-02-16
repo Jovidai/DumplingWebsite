@@ -1,5 +1,6 @@
-var url = "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/53158/dumpling-emoji-clipart-md.png"
-d3.json(url)
+var url = "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/53158/dumpling-emoji-clipart-md.png";
+
+/*d3.json(url)
   .then(function(data) {
 
     d3.select("#dumpling-button")
@@ -18,4 +19,4 @@ d3.select(window)
     d3.select("#dumpling-button")
       .style("background-position", "50% " + y + "%");
 
-  });
+  });*/
