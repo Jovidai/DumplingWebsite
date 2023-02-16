@@ -21,6 +21,16 @@
     
   }
   
+  div#submitForm input {
+    background: url("images/button.png") no-repeat scroll 0 0 transparent;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    height: 20px;
+    padding-bottom: 2px;
+    width: 75px;
+  }
+  
   .flickity-viewport {
     transition: height 0.2s;
   }
@@ -34,12 +44,11 @@
 
   }
 
-  button{
+  .dumpling-button{
     text-align: center;
     border: none;
-    display: inline-block;
-    font-size: 20px;
-    background-image: url('/Users/KevinLu/Desktop/DumplingCode/DumplingWebsite/images/button.png');
+    font-size: 80px;
+    background-image: url('https://creazilla-store.fra1.digitaloceanspaces.com/emojis/53158/dumpling-emoji-clipart-md.png');
 
   }
 
