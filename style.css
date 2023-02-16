@@ -34,20 +34,15 @@
 
   }
 
-  .button{
-    display: block;
-    width: 100%;
-    border: none;
-    background-color: #04AA6D;
-    padding: 14px 28px;
-    font-size: 40px;
-    cursor: pointer;
+  button{
     text-align: center;
-    box-sizing: content-box;
-    height: 200px;
-    
+    border: none;
+    display: inline-block;
+    font-size: 20px;
+    background-image: url('/Users/KevinLu/Desktop/DumplingCode/DumplingWebsite/images/button.png');
 
   }
+
 
   h1{
     text-align: center;
@@ -100,6 +95,7 @@
       flex: none;
     }
   }
+
 
   #back {
     text-align: center;
