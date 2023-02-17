@@ -159,6 +159,11 @@ opacity:0.9;
     margin-top: 8px;
     line-height: 35px;
   }
+  .header{
+    font-size: 60px;
+    background-color: red;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
 
   #tooltip {
     display: none;
@@ -199,7 +204,9 @@ opacity:0.9;
   a:visited {
     color:#cd395b;
 }
-
+.question{
+background-color: #cd395b;
+}
   a:hover {
     color:#1c1c1c;
     background-color: #ebf952; /*Sets background of link to Emancipator HIGHLIGHTER */
