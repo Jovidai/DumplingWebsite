@@ -1,7 +1,7 @@
 const dumplingType = ["DumplingType0", "DumplingType1", "DumplingType2"];
 const fillingText = ["FillingType0", "Pork is from south China and is used during the new year.", "FillingType2"];
 const sauceText = ["SauceType0", "Lao gan ma is very popular in the south east", "SauceType2"];
-
+const backgroundImages = ["images/northernchina.jpeg", "images/southernChina.jpeg", "images/changzhou.webp"];
 var dumplingIndex = 0;
 var fillingIndex = 0;
 var sauceIndex = 0;
@@ -42,6 +42,7 @@ function init(){
     console.log( 'First Flickity settled at ' + index );
     dumplingIndex = index;
     updateEndText();
+    updateBackground();
   });
 
   $carousel1.on( 'settle.flickity', function( event, index ) {
@@ -71,6 +72,12 @@ function finishedStuff(){
 function updateEndText() {
   const element = document.getElementById("end-text");
   element.innerHTML = dumplingType[dumplingIndex] + "\n" + fillingText[fillingIndex] + "\n" + sauceText[sauceIndex];
+}
+
+function updateBackground(){
+  const element = document.getElementById("caros");
+  console.log(element);
+  element.style.backgroundImage = "url(" + (backgroundImages[dumplingIndex]) + ")";
 }
 
 const scrollBtn = document.getElementById("start-button");
