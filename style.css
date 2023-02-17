@@ -1,6 +1,7 @@
 .carousel-cell {
     width: 100%; /* full width */
     margin-right: 10px;
+    
   }
   
   .main-carousel{
@@ -13,11 +14,20 @@
     }
     .main-carousel2{
       background-color: rgb(255,114,118);
-    
     }
-  
+    #potstickers{
+      padding-top: 5vw;
+    }
+  #xiaolongbao{
+    padding-top: 5vw;
+    width: 30vw;
+    height: auto;
+  }
   .dumpling{
-    display: block; margin-left: auto; margin-right: auto; width: 25vw;
+    display: block; 
+    margin: auto;
+    width: 25vw;
+    
     
   }
   
