@@ -1,5 +1,5 @@
 const dumplingType = ["Guotie (pot stickers),", "Huntun (wonton),", "Xiaolongbao,"];
-const fillingText = ["Leek and shrimp stuffing,", "Mushroom and cabbage stuffed with meat,", "Pork and scallion stuffing,"];
+const fillingText = ["Leek and shrimp stuffing,", "Mushroom and cabbage stuffed with meat,", "Fish and scallion stuffing,"];
 const sauceText = ["Chili sauce", "Soy sauce with scallion,", "Hoisin dipping sauce,"];
 const backgroundImages = ["images/northernchina.jpeg", "images/southernChina.jpeg", "images/changzhou.webp"];
 const backgroundAudios = ["audio/northeastChina.mp4", "audio/southeast.mp4", "audio/southwest.mp4"];
