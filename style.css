@@ -209,3 +209,20 @@ p.firstpara {
     padding-top: 1em;
     font-size: 20px;
   }
+
+#map { 
+  height: 580px; 
+  margin: 0em auto;
+}
+
+span.color1 {
+  color: #F5B041;
+}
+
+span.color2 {
+  color: #3498DB;
+}
+
+span.color3 {
+  color: #2ECC71;
+}
