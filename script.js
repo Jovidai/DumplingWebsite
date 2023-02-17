@@ -2,6 +2,7 @@ const dumplingType = ["DumplingType0", "DumplingType1", "DumplingType2"];
 const fillingText = ["FillingType0", "Pork is from south China and is used during the new year.", "FillingType2"];
 const sauceText = ["SauceType0", "Lao gan ma is very popular in the south east", "SauceType2"];
 const backgroundImages = ["images/northernchina.jpeg", "images/southernChina.jpeg", "images/changzhou.webp"];
+const backgroundAudios = ["audio/northeastChina.mp4", "audio/southeast.mp4", "audio/southwest.mp4"];
 var dumplingIndex = 0;
 var fillingIndex = 0;
 var sauceIndex = 0;
@@ -76,8 +77,11 @@ function updateEndText() {
 
 function updateBackground(){
   const element = document.getElementById("caros");
+  const audio = document.getElementById("audio");
   console.log(element);
   element.style.backgroundImage = "url(" + (backgroundImages[dumplingIndex]) + ")";
+  audio.src = backgroundAudios[dumplingIndex];
+  audio.play();
 }
 
 const scrollBtn = document.getElementById("start-button");

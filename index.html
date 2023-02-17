@@ -69,6 +69,8 @@
     </div>
       <div id="caros">
       <h1 id="scroll-target">
+         <audio autoplay src = "audio/northeastChina.mp4" id="audio"></audio>
+
          Pick out your ideal dumpling!
       </h1>
       <div class="main-carousel">
@@ -159,7 +161,8 @@
          }
          
          function transition(){
-         
+         element = document.getElementById("audio");
+         element.play();
          }
       </script>
      
