@@ -101,6 +101,8 @@ opacity:0.9;
     
   }
   #caros {
+    transition-property: opacity;
+    transition: 2s;
     font-family: 'Martel', serif;
     margin: 0;
     text-align: center;
