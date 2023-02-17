@@ -20,7 +20,17 @@
       height: auto;
       padding-top: 5vw;
     }
+    #vinegar{
+      width: 37vw;
+      height:auto;
+      padding-top: 3vw
+    }
 
+    #hoisin{
+      width: 32vw;
+      height:auto;
+      padding-top: 1vw;
+    }
     #jiucai{
       width: 35vw;
       height: auto;
