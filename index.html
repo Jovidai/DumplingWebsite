@@ -23,6 +23,16 @@
     <!-- Import the webpage's stylesheet -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
     
     <!-- Icon -->
     <link rel="icon" type="image/x-icon" href="images/Dumplings-Transparent-PNG.png">
@@ -91,7 +101,7 @@
 
 <h1 class = "question">
   <p>
-    What type of filling do you like?
+    What types of filling do you like?
   
   </p>
   
@@ -189,6 +199,9 @@ var flkty = new Flickity( '.main-carousel', {
    }
   </script>
  
+ <div id="map"></div>
+ <!--JavaScript files-->
+ <script src="map.js"></script>
 
   </body>
 </html>
