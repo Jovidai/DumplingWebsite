@@ -23,7 +23,6 @@ function init(){
     // options
     cellAlign: 'center',
     contain: false,
-    adaptiveHeight: true
   });
   
   $('.main-carousel2').flickity({

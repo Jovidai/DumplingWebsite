@@ -15,6 +15,17 @@
     .main-carousel2{
       background-color: rgb(255,114,118);
     }
+    #fishDumpling{
+      width: 30vw;
+      height: auto;
+      padding-top: 5vw;
+    }
+
+    #jiucai{
+      width: 35vw;
+      height: auto;
+      padding-top: 3vw;
+    }
     #potstickers{
       padding-top: 5vw;
     }
