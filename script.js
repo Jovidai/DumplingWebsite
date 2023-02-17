@@ -1,6 +1,6 @@
-const dumplingType = ["DumplingType0", "DumplingType1", "DumplingType2"];
-const fillingText = ["FillingType0", "Pork is from south China and is used during the new year.", "FillingType2"];
-const sauceText = ["SauceType0", "Lao gan ma is very popular in the south east", "SauceType2"];
+const dumplingType = ["Guotie (pot stickers),", "Huntun (wonton),", "Xiaolongbao,"];
+const fillingText = ["Leek and shrimp stuffing,", "Mushroom and cabbage stuffed with meat,", "Pork and scallion stuffing,"];
+const sauceText = ["Chili sauce", "Soy sauce with scallion,", "Hoisin dipping sauce,"];
 const backgroundImages = ["images/northernchina.jpeg", "images/southernChina.jpeg", "images/changzhou.webp"];
 var dumplingIndex = 0;
 var fillingIndex = 0;
