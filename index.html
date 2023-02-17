@@ -68,20 +68,25 @@
 
     </div>
     <br>
-
+    <div onclick="transition()">
+      <button class="dumpling-button" id="start-button">
+        
+        <img src="images/dumpstart.png" alt="buttonpng" border="0" class="dumpling"/>
+      </button>
+  </body>
     <p><img src=https://i.ibb.co/F46sQh5/Borde.png width=1500></p>
     <br>
-  </body>
+
   
   
   <body>
     
-    <h1 id="paragraph;">
+    <h1 id="scroll-target">
       Pick out your ideal dumpling!
     </h1>
     
     
-    <div id= "first-carousel" class="main-carousel">
+    <div class="main-carousel">
       
   <div class="carousel-cell">
       <img class= "dumpling" src="images/potstickers.png" id="potstickers">
@@ -195,6 +200,10 @@ var flkty = new Flickity( '.main-carousel', {
     console.log("Finish");
     const element = document.getElementById("end-text");
     element.style.opacity = 1;
+   }
+
+   function transition(){
+
    }
   </script>
  

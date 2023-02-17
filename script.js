@@ -72,3 +72,10 @@ function updateEndText() {
   const element = document.getElementById("end-text");
   element.innerHTML = dumplingType[dumplingIndex] + "\n" + fillingText[fillingIndex] + "\n" + sauceText[sauceIndex];
 }
+
+const scrollBtn = document.getElementById("start-button");
+const scrollTarget = document.getElementById("scroll-target");
+
+scrollBtn.addEventListener("click", () => {
+  scrollTarget.scrollIntoView({ behavior: "smooth" });
+});
