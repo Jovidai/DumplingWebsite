@@ -13,10 +13,12 @@ opacity:0.9;
   }
   .main-carousel1{
     background-color: rgb(255,114,118);
+    opacity: 0.9;
   
     }
     .main-carousel2{
       background-color: rgb(255,114,118);
+      opacity: 0.9;
     }
     #fishDumpling{
       width: 30vw;
