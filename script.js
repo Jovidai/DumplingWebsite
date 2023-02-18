@@ -15,91 +15,95 @@ var sauceIndex = 0;
 
 $(document).ready(function() {
 
-  init();
+    init();
 
 });
 
-function init(){
-  $('.main-carousel').flickity({
-    // options
-    cellAlign: 'center',
-    contain: true
-  });
-  
-  $('.main-carousel1').flickity({
-    // options
-    cellAlign: 'center',
-    contain: false,
-  });
-  
-  $('.main-carousel2').flickity({
-    // options
-    cellAlign: 'center',
-    contain: true
-  });
-  
-  // init Flickity with jQuery
-  var $carousel = $('.main-carousel').flickity();
-  var $carousel1 = $('.main-carousel1').flickity();
-  var $carousel2= $('.main-carousel2').flickity();
-  
-  // access properties
-  //var fillingArray = {1, 2, "The gyoza is from Japn..."}
-  $carousel.on( 'settle.flickity', function( event, index ) {
-    console.log( 'First Flickity settled at ' + index );
-    dumplingIndex = index;
-    updateEndText();
-    updateBackground();
-  });
+function init() {
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'center',
+        contain: true
+    });
 
-  $carousel1.on( 'settle.flickity', function( event, index ) {
-    console.log( 'Second Flickity settled at ' + index );
-    fillingIndex = index;
-    updateEndText();
+    $('.main-carousel1').flickity({
+        // options
+        cellAlign: 'center',
+        contain: false,
+    });
 
-  });
-  $carousel2.on( 'settle.flickity', function( event, index ) {
-    console.log( 'Third Flickity settled at ' + index );
-    sauceIndex = index;
-    updateEndText();
+    $('.main-carousel2').flickity({
+        // options
+        cellAlign: 'center',
+        contain: true
+    });
 
-  });
-  updateEndText();
+    // init Flickity with jQuery
+    var $carousel = $('.main-carousel').flickity();
+    var $carousel1 = $('.main-carousel1').flickity();
+    var $carousel2 = $('.main-carousel2').flickity();
+
+    // access properties
+    //var fillingArray = {1, 2, "The gyoza is from Japn..."}
+    $carousel.on('settle.flickity', function(event, index) {
+        console.log('First Flickity settled at ' + index);
+        dumplingIndex = index;
+        updateEndText();
+        updateBackground();
+    });
+
+    $carousel1.on('settle.flickity', function(event, index) {
+        console.log('Second Flickity settled at ' + index);
+        fillingIndex = index;
+        updateEndText();
+
+    });
+    $carousel2.on('settle.flickity', function(event, index) {
+        console.log('Third Flickity settled at ' + index);
+        sauceIndex = index;
+        updateEndText();
+
+    });
+    updateEndText();
 
 
 }
 
-function finishedStuff(){
-  //show the ending
-  //show the text
-  //show the map
-  //yelp?
+function finishedStuff() {
+    //show the ending
+    //show the text
+    //show the map
+    //yelp?
 }
 
 function updateEndText() {
-  const element = document.getElementById("end-text");
-  element.innerHTML = dumplingText[dumplingIndex] + "\n" + fillingText[fillingIndex] + "\n" + sauceText[sauceIndex];
+    const element = document.getElementById("end-text");
+    element.innerHTML = dumplingText[dumplingIndex] + "\n" + fillingText[fillingIndex] + "\n" + sauceText[sauceIndex];
 }
 
-function updateBackground(){
-  const element = document.getElementById("caros");
-  const audio = document.getElementById("audio");
-  console.log(element);
-  element.style.backgroundImage = "url(" + (backgroundImages[dumplingIndex]) + ")";
-  audio.src = backgroundAudios[dumplingIndex];
-  audio.play();
+function updateBackground() {
+    const element = document.getElementById("caros");
+    const audio = document.getElementById("audio");
+    console.log(element);
+    element.style.backgroundImage = "url(" + (backgroundImages[dumplingIndex]) + ")";
+    audio.src = backgroundAudios[dumplingIndex];
+    audio.play();
 }
 
 const scrollBtn = document.getElementById("start-button");
 const scrollTarget = document.getElementById("scroll-target");
 
 scrollBtn.addEventListener("click", () => {
-  scrollTarget.scrollIntoView({ behavior: "smooth" });
+    scrollTarget.scrollIntoView({
+        behavior: "smooth"
+    });
 });
 
 const scrollBtn1 = document.getElementById("finish-button");
 const scrollTarget1 = document.getElementById("end-text");
 
 scrollBtn1.addEventListener("click", () => {
-  scrollTarget1.scrollIntoView({ behavior: "smooth" });
+    scrollTarget1.scrollIntoView({
+        behavior: "smooth"
+    });
 });
