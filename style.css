@@ -156,6 +156,8 @@ opacity:0.9;
   }
 
   #paragraph {
+    background-color: #000000;
+    color: #CACFD2;
     font-size: 25px;
     text-align: center;
     margin-top: 8px;
